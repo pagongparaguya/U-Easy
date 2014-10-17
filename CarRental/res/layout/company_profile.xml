@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/scrollView1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:padding="5dp"
+		    android:background="@drawable/bground">
+		    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical" >
+	    	    
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/white_button" >	
+			    <TextView
+			        android:id="@+id/whatsturbo"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="What is Turbo?"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:gravity="center"
+			        android:padding="10dp"
+			        android:textStyle="bold" 
+			        android:textColor="@color/white"
+			        android:background="@color/orange" />
+			
+			    <TextView
+			        android:id="@+id/aboutturbo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Turbo Car Rental Services has been one of the leading car rental company in the Visayas Region and a proud member of the Autohub Group."
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:background="@drawable/bottom_border"
+			        android:padding="5dp" />	
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/white_button"
+		    android:layout_marginTop="5dp" >	
+			    <TextView
+			        android:id="@+id/whatturbocan"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="What Turbo Offers"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:gravity="center"
+			        android:padding="10dp"
+			        android:textStyle="bold" 
+			        android:textColor="@color/white"
+			        android:background="@color/orange" />
+			
+			    <TextView
+			        android:id="@+id/turbocando"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Turbo Car Rental Services makes it easy for your to book your Cebu airport/port car rental. We offer the cheapest  and/or most affordable car rental rates in the Visayas region bringing you a wide selection of cars for rent such as compact car, intermediate car, full size car, premium car, full size van."
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:background="@drawable/bottom_border"
+			        android:padding="5dp" />	
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

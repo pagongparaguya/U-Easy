@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/rentacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/rentacar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/form_textSize"
+        android:textColor="@color/menu_green" />
+
+    <ImageButton
+        android:id="@+id/rentacarimg"
+        android:layout_width="@dimen/menu_icon"
+        android:layout_height="@dimen/menu_icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/form_mTop"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/rentacar"
+        android:src="@drawable/menu_car" />
+
+</RelativeLayout>

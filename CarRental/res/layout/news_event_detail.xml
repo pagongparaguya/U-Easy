@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bground"
+    android:padding="5dp"  
+    tools:context=".MainActivity"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA111111"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEBU DRIVERS PROTEST STIFF TRAFFIC FINES"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" 
+            android:layout_margin="10dp"/>
+        
+        <ImageView
+	        android:id="@+id/newsImage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="200dp"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/news2" />        
+
+        <TextView
+            android:id="@+id/newsStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEBU CITY—At least 300 jeepney drivers stopped plying their routes on Tuesday in what they said was a protest action, not a strike meant to paralyze transportation in the city, against excessive traffic violation penalties.
+Greg Perez, head of the militant Pinagisang Samahan ng mga Tsuper at Operator Nationwide (Piston) in Cebu, said the protest action was not meant to paralyze transportation.
+“We only wanted to voice out our grievances,” he said.
+The drivers are protesting a joint administrative order of two agencies—Land Transportation Office (LTO) and Land Transportation Franchising Regulatory Board (LTFRB)—that increased penalties for operators of unregistered public utility vehicles.
+Owners of so-called “colorum” PUVs face fines of as much as P1 million for buses and P50,000 for jeepneys.
+The order also imposes fines and penalties for other violations like refusal to convey passengers to their destinations, arrogance toward passengers, use of vehicles with defective parts, cutting trips and use of tampered taxi meters.
+Anticipating transport paralysis, the local government units of Cebu and Mandaue sent out government vehicles to ferry stranded passengers.
+Dr. Rhea Mar Angtud, head of Cebu City’s Schools Division, also ordered classes cut short in public elementary and high schools until 3 p.m. to prevent pupils and students from being stranded on the streets.
+Night classes for high schools had been suspended.
+The Cebu City government fielded 22 government-owned buses as early as 6 a.m. to offer free rides to passengers stranded on major thoroughfares.
+
+
+Read more: http://newsinfo.inquirer.net/642058/cebu-drivers-protest-stiff-traffic-fines#ixzz3GKQ2kzT5 
+Follow us: @inquirerdotnet on Twitter | inquirerdotnet on Facebook"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" 
+            android:padding="5dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground" >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    android:layout_gravity="center" >
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Large Text"
+        android:background="#AA111111"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:layout_width="@dimen/menu_width"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                layout="@layout/rentacar_layout"
+                android:id="@+id/menurentacar" />
+
+            <include               
+                android:layout_width="@dimen/menu_width"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                layout="@layout/myprofile_layout"
+                android:id="@+id/menuprofileimg" />            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+               android:layout_width="@dimen/menu_width"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                layout="@layout/newsevents_layout"
+                android:id="@+id/menunews" />
+
+            <include
+                android:layout_width="@dimen/menu_width"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                layout="@layout/aboutus_layout"
+                android:id="@+id/menuaboutus" />            
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>
