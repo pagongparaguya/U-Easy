@@ -1,0 +1,181 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginTop="10dp">
+	
+    <LinearLayout
+	        android:id="@+id/header"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/green"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="horizontal"
+	        android:gravity="center">
+		        
+	    <TextView
+	        android:id="@+id/pud"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:text="October 1, 2014"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/white"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/bar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:text=" || "
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/white"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/put"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:text="5:00AM"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/white"
+	        android:textStyle="bold" />
+	    
+	</LinearLayout>
+	
+    <LinearLayout
+	        android:id="@+id/code"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bottom_border"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal" >
+	    	
+	    	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Confirmation Code"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black"
+	            android:textStyle="bold" />
+	       
+            <TextView
+	            android:id="@+id/confirmationCode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="ABC123"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black" />
+     	</LinearLayout>
+	         	
+    <LinearLayout
+	        android:id="@+id/modelofcar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bottom_border"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal" >
+	    	
+	    	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Car Model"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black"
+	            android:textStyle="bold" />
+	       
+            <TextView
+	            android:id="@+id/model"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Ferrari"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black" />
+     	</LinearLayout> 
+     
+    
+    <LinearLayout
+	        android:id="@+id/typeofservice"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bottom_border"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal" >
+	        
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Service Type"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black"
+	            android:textStyle="bold" />
+            
+            <TextView
+	            android:id="@+id/service"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Chauffer"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black" />
+     	</LinearLayout>
+     	
+     	<LinearLayout
+	        android:id="@+id/rentprice"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bottom_border"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal" >
+	        
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Rental Price (Per Day)"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black"
+	            android:textStyle="bold" />
+            
+            <TextView
+	            android:id="@+id/price"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="P3,100"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black" />
+     	</LinearLayout>	
+     	
+    	<LinearLayout
+	        android:id="@+id/dateofreturn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/label_mTop"        
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:background="@drawable/bottom_border" >
+	        
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Return Date and Time"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black"
+	            android:textStyle="bold" />
+            
+            <TextView
+	            android:id="@+id/ret"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="October 10, 2014 || 9:00AM"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/black" />
+     	</LinearLayout>
+
+</LinearLayout>

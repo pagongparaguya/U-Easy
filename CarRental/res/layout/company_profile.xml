@@ -62,7 +62,30 @@
 			        android:text="Turbo Car Rental Services makes it easy for your to book your Cebu airport/port car rental. We offer the cheapest  and/or most affordable car rental rates in the Visayas region bringing you a wide selection of cars for rent such as compact car, intermediate car, full size car, premium car, full size van."
 			        android:textAppearance="?android:attr/textAppearanceSmall"
 			        android:background="@drawable/bottom_border"
-			        android:padding="5dp" />	
+			        android:padding="5dp" />			    	
 		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/white_button"
+		    android:layout_marginTop="5dp"
+		    android:gravity="center">
+		    	
+		    	<TextView 			   	
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="v1.000001" 
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Turbo &#169; 2014" 
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textStyle="bold" />	  		
+		</LinearLayout>
+		
 	</LinearLayout>
 </ScrollView>

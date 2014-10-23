@@ -31,14 +31,13 @@ public class MainActivity extends Activity {
         Button login = (Button) findViewById(R.id.login);
         TextView reg = (TextView) findViewById(R.id.signup);
         TextView fgpw = (TextView) findViewById(R.id.fgetpword);
-        RelativeLayout fb = (RelativeLayout) findViewById(R.id.fbmenu);
         login.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				EditText user = (EditText) findViewById(R.id.username);
-		        Intent login = new Intent(getApplicationContext(),MMenu.class);
+		        Intent login = new Intent(getApplicationContext(),NavMainMenu.class);
 				login.putExtra("username", user.getText().toString());
 				startActivity(login);
 			}
@@ -65,32 +64,5 @@ public class MainActivity extends Activity {
 				startActivity(fpw);
 			}
 		});
-        
-        fb.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), "I am clicked.", Toast.LENGTH_SHORT).show();
-			}
-		});
     }
-    @Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_profile, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.aboutus) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
 }

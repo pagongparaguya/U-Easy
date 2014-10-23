@@ -49,7 +49,25 @@
         <item >Port</item>
         <item >Airport</item>
     </string-array>
-    
-    
-
+    <string-array name="nav_drawer_items">
+        <item >Rental</item>
+        <item >History</item>
+        <item >Rent a Car</item>
+        <item >Profile</item>
+        <item >News and Events</item>
+        <item >Contact</item>
+        <item >About</item>
+        <item >Logout</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/navbar_myrentals</item>
+        <item>@drawable/navbar_history</item>
+        <item>@drawable/navbar_rentcar</item>
+        <item>@drawable/navbar_myprofile</item>
+        <item>@drawable/navbar_news</item>
+        <item>@drawable/navbar_contact</item>
+        <item>@drawable/navbar_aboutus</item>
+        <item>@drawable/navbar_logout</item>
+    </array>
+	<string name="desc_list_item_icon">Item Icon</string>
 </resources>

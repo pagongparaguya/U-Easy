@@ -1,20 +1,9 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="135dp"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:padding="5dp"
-    android:id="@+id/frame"
-    android:clickable="true"
-    android:descendantFocusability="blocksDescendants"
-    android:focusable="false"
-    android:focusableInTouchMode="false" >
-
-    <ImageView
-        android:id="@+id/newsImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/news3" />
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/eventDate"
@@ -26,23 +15,18 @@
         android:textSize="11sp"
         android:textColor="@color/black" 
         android:textStyle="normal"/>
-    
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="bottom"
-        android:background="#AA111111"
-        android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/eventName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CEBU DRIVERS PROTEST STIFF TRAFFIC FINES"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
-</FrameLayout>
+
+	<TextView
+	    android:id="@+id/eventName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="CEBU DRIVERS PROTEST STIFF TRAFFIC FINES"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textStyle="bold"
+	    android:textColor="#FFFFFF"
+	    android:background="#AA111111" 
+	    android:padding="5dp"/>
+
+
+</LinearLayout>

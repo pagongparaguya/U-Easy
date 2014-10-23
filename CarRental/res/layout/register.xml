@@ -12,20 +12,31 @@
         
 	     <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content" >
-	        
-		     <TextView
-		        android:id="@+id/plssupply"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"  
-		        android:layout_marginBottom="@dimen/button_mTop"
-		        android:text="@string/plssupply"
-		        android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	        android:layout_height="150dp" >
+
+		     <ImageView
+		         android:id="@+id/profpic"
+		         android:layout_width="150dp"
+		         android:layout_height="150dp"
+		         android:src="@drawable/defaultpic" />
+
+		     <Button
+		         android:id="@+id/uploadPhoto"
+		         android:layout_margin="5dp"
+		         android:layout_gravity="center"
+		         android:layout_width="fill_parent"
+		         android:layout_height="@dimen/form_height"
+		         android:layout_marginTop="@dimen/form_mTop"
+		         android:background="@drawable/gray_button"
+		         android:text="@string/uploadphoto"
+		         android:textColor="#ffffff"
+		         android:textSize="@dimen/form_textSize" />
+
 	  	</LinearLayout>
 	  
 	     <EditText
 	        android:id="@+id/firstname"
+	        android:layout_marginTop="5dp"
 	        android:layout_width="fill_parent"
 	        android:layout_height="@dimen/form_height"
 	        android:textSize="@dimen/form_textSize"
@@ -97,16 +108,6 @@
 	        android:layout_marginTop="@dimen/form_mTop"
 	        android:inputType="phone"
 	        android:background="@drawable/white_button" />
-	    
-	    <Button
-	        android:id="@+id/uploadPhoto"
-	        android:layout_width="fill_parent"
-	        android:layout_height="@dimen/form_height"
-	        android:textSize="@dimen/form_textSize"
-	        android:layout_marginTop="@dimen/form_mTop"
-	        android:text="@string/uploadphoto"
-	        android:textColor="#ffffff"
-	        android:background="@drawable/gray_button" />
 	    
 	    <Button
 	        android:id="@+id/submit"

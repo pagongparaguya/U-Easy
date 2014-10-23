@@ -3,18 +3,35 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bground">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp" >
-	
- 	<LinearLayout
+	<LinearLayout
  	    android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:orientation="vertical"
-    	android:layout_centerHorizontal="true"
-    	android:layout_centerVertical="true" > 
- 	    	
+		android:layout_gravity="center"
+		android:padding="20dp" > 
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="150dp">
+		    <ImageView 
+		        android:id="@+id/profpic"
+		        android:src="@drawable/defaultpic"
+		        android:layout_width="150dp"
+		        android:layout_height="150dp"/>
+
+		    <Button
+		        android:id="@+id/uploadPhoto"
+		        android:layout_width="fill_parent"
+		        android:layout_height="@dimen/form_height"
+		        android:layout_marginTop="@dimen/label_mTop"
+		        android:background="@drawable/gray_button"
+		        android:text="@string/changephoto"
+		        android:textColor="#ffffff"
+		        android:textSize="@dimen/form_textSize"
+		        android:layout_gravity="center"
+		        android:layout_margin="5dp" />
+
+		</LinearLayout>
  	        <TextView
                 android:layout_width="wrap_content"
             	android:layout_height="wrap_content"
@@ -135,17 +152,7 @@
                 android:layout_height="@dimen/form_height"
                 android:background="@drawable/white_button"
                 android:hint="@string/contactnum"
-                android:textSize="@dimen/form_textSize" /> 	
-                
-            <Button
-		        android:id="@+id/uploadPhoto"
-		        android:layout_width="fill_parent"
-		        android:layout_height="@dimen/form_height"
-		        android:textSize="@dimen/form_textSize"
-		        android:layout_marginTop="@dimen/label_mTop"
-		        android:text="@string/changephoto"
-		        android:textColor="#ffffff"
-		        android:background="@drawable/gray_button" />
+                android:textSize="@dimen/form_textSize" />
             
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -177,7 +184,5 @@
 		        android:layout_weight="0.5" />
  			
  			</LinearLayout>
- 	</LinearLayout>
-    
-</RelativeLayout>
+	</LinearLayout>
 </ScrollView>

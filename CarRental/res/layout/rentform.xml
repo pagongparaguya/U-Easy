@@ -8,179 +8,103 @@
         android:layout_margin="5dp"
         android:orientation="vertical"
         android:layout_gravity="center">
-        <LinearLayout 
-            android:layout_weight="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Car Model:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/model"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Hello" 
-                android:textStyle="bold"
-		        android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_weight="0.3"/>
-        </LinearLayout>
-        <Button
-            android:layout_marginTop="3dp" 
-            android:layout_width="fill_parent"
-            android:textColor="@color/white"
-            android:layout_height="@dimen/form_height"
-            android:background="@drawable/gray_button"
-            android:text="Choose Other Model"
-            android:id="@+id/rentBack"/>
         
-        <LinearLayout 
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:text="Service Type:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Service Type:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+            android:id="@+id/service"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/form_height"
+            android:background="@drawable/gray2_button" />
 
-            <Spinner
-                android:layout_weight="0.3"
-                android:id="@+id/service"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:entries="@array/service"
-                android:background="@drawable/gray2_button" />
 
-        </LinearLayout>
-        <LinearLayout 
-            android:layout_weight="1"
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:text="Pick-up Location:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Pick-up Loc.:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/form_height"
+            android:entries="@array/loc"
+            android:background="@drawable/gray2_button" />
 
-            <Spinner
-                android:layout_weight="0.3"
-                android:id="@+id/location"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:entries="@array/loc"
-                android:background="@drawable/gray2_button" />
-
-        </LinearLayout>
-        <LinearLayout 
-            android:layout_weight="1"
+        
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:text="Pick-up Date:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Pick-up Date:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <Button
-                android:background="@drawable/gray2_button"
-                android:layout_height="@dimen/form_height"
-                android:id="@+id/pud"
-                android:onClick="setDate"
-                android:layout_width="fill_parent"
-                android:layout_weight="0.3"/>
-        </LinearLayout>
-        <LinearLayout 
-            android:layout_weight="1"
+        <Button
+            android:background="@drawable/gray2_button"
+            android:layout_height="@dimen/form_height"
+            android:id="@+id/pud"
+            android:onClick="setDate"
+            android:layout_width="fill_parent"/>
+    
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:text="Pick-up Time:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Pick-up Time:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <Button
-                android:background="@drawable/gray2_button"
-                android:layout_height="@dimen/form_height"
-                android:id="@+id/put"
-                android:layout_width="fill_parent"
-                android:layout_weight="0.3"/>
-        </LinearLayout>
-        <LinearLayout 
-            android:layout_weight="1"
+        <Button
+            android:background="@drawable/gray2_button"
+            android:layout_height="@dimen/form_height"
+            android:id="@+id/put"
+            android:onClick="setDate1"
+            android:layout_width="fill_parent"/>
+    
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:text="Number of Days:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Return Date:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <Button
-                android:background="@drawable/gray2_button"
-                android:layout_height="@dimen/form_height"
-                android:id="@+id/rDate"
-                android:onClick="setDate1"
-                android:layout_width="fill_parent"
-                android:layout_weight="0.3"/>
-        </LinearLayout>
-        <LinearLayout 
-            android:layout_weight="1"
+        <EditText
+            android:background="@drawable/gray2_button"
+            android:layout_height="@dimen/form_height"
+            android:id="@+id/numDays"
+            android:layout_width="fill_parent"/>
+        
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp"
-            android:weightSum="1">
+            android:text="Return Date:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/form_height"
-                android:text="Return Time:"
-                android:layout_weight="0.7"
-                android:textSize="@dimen/form_textSize"        
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Button
+            android:background="@drawable/gray2_button"
+            android:layout_height="@dimen/form_height"
+            android:id="@+id/rDate"
+            android:layout_width="fill_parent"/>
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Return Time:"
+            android:textSize="@dimen/form_textSize"        
+      		android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <Button
-                android:background="@drawable/gray2_button"
-                android:layout_height="@dimen/form_height"
-                android:id="@+id/rTime"
-                android:layout_width="fill_parent"
-                android:layout_weight="0.3"/>
-        </LinearLayout>
+        <Button
+            android:background="@drawable/gray2_button"
+            android:layout_height="@dimen/form_height"
+            android:id="@+id/rTime"
+            android:layout_width="fill_parent"/>
+        
         <Button 
             android:layout_marginTop="15dp"
             android:textColor="@color/white"

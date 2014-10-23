@@ -78,7 +78,6 @@ public class RentForm extends Activity implements OnItemSelectedListener{
 		Spinner serv = (Spinner) findViewById(R.id.service);
 		Spinner loc = (Spinner) findViewById(R.id.location);
 		Button sub = (Button) findViewById(R.id.rentSubmit);
-		Button back = (Button) findViewById(R.id.rentBack);
 		Button cancel = (Button) findViewById(R.id.rentCancel);
 		
 		calendar = Calendar.getInstance();
@@ -86,6 +85,7 @@ public class RentForm extends Activity implements OnItemSelectedListener{
 	    month = calendar.get(Calendar.MONTH);
 	    day = calendar.get(Calendar.DAY_OF_MONTH);
 	    showDate(year, month+1, day);
+	    showDate1(year, month+1, day);
 	    
 		serv.setOnItemSelectedListener(this);
 		loc.setOnItemSelectedListener(this);
@@ -96,16 +96,8 @@ public class RentForm extends Activity implements OnItemSelectedListener{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Toast.makeText(getApplicationContext(), "Reservation Successful!", Toast.LENGTH_SHORT).show();
-				Intent i = new Intent(getApplicationContext(),MMenu.class);
+				Intent i = new Intent(getApplicationContext(),NavMainMenu.class);
 				startActivity(i);
-				finish();
-			}
-		});
-		back.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				finish();
 			}
 		});
@@ -114,7 +106,7 @@ public class RentForm extends Activity implements OnItemSelectedListener{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(getApplicationContext(),MMenu.class);
+				Intent i = new Intent(getApplicationContext(),NavMainMenu.class);
 				startActivity(i);
 				finish();
 			}
@@ -202,13 +194,13 @@ public class RentForm extends Activity implements OnItemSelectedListener{
 		}
 	};
 	   private void showDate(int year, int month, int day) {
-	      dateView.setText(new StringBuilder().append(day).append("/")
-	      .append(month).append("/").append(year));
+	       dateView.setText(new StringBuilder().append(day).append("/")
+	       .append(month).append("/").append(year));
 	   }
 	   private void showDate1(int year, int month, int day) {
-		      endView.setText(new StringBuilder().append(day).append("/")
-		      .append(month).append("/").append(year));
-		   }
+		   endView.setText(new StringBuilder().append(day).append("/")
+		   .append(month).append("/").append(year));
+	   }
 
 	@Override
 	public void onItemSelected(AdapterView<?> parent, View view, int position,
