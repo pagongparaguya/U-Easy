@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground" >
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:orientation="vertical"
+    	 android:layout_margin="20dp" >
+        
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal" >
+		     
+		     <ImageView
+		        android:id="@+id/logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="25dp"
+		        android:layout_marginLeft="7dp"
+		        android:contentDescription="@string/turboL"
+		        android:src="@drawable/turbo_full" />
+	     </LinearLayout>
+	     
+	     <EditText
+	        android:id="@+id/username"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:hint="@string/username"
+	        android:inputType="textPersonName"
+	        android:textSize="@dimen/form_textSize"
+	        android:background="@drawable/white_button" >
+	        <requestFocus />
+	     </EditText>
+	    
+	     <EditText
+	        android:id="@+id/password"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:hint="@string/password"
+	        android:inputType="textPassword"
+	        android:textSize="@dimen/form_textSize"
+	        android:background="@drawable/white_button"
+	        android:layout_marginTop="@dimen/form_mTop" />
+
+	     <TextView
+	        android:id="@+id/fgetpword"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:clickable="true"
+	        android:text="@string/fgetpword"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="?android:attr/textAppearanceMedium" />
+	     
+	     <Button
+	        android:id="@+id/login"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:text="@string/login"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:layout_gravity="center"
+	        android:background="@drawable/green_button"
+	        android:layout_marginTop="@dimen/button_mTop" /> 
+	       
+	    <TextView
+	        android:id="@+id/signup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:clickable="true"
+	        android:text="@string/signup"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="?android:attr/textAppearanceMedium"
+	        android:layout_gravity="center"  />        
+         
+     </LinearLayout>
+</ScrollView>

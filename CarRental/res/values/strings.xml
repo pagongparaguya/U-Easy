@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">CarRental</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="newpword">New Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up to Turbo</string>
+    <string name="loginvia">Login Via</string>
+    <string name="fgetpword">Forgot Password?</string>
+    <string name="confirmpword">Confirm Password</string>
+    <string name="eadd">Email Address</string>
+    <string name="contactnum">Contact Number</string>
+    <string name="submit">Submit</string>
+    <string name="rtologin">Return to Login</string>
+    <string name="rentacar">Rent a Car</string>
+    <string name="myrentals">My Rentals</string>
+    <string name="myprofile">My Profile</string>
+    <string name="newsevents">News/Events</string>
+    <string name="aboutus">About Us</string>
+    <string name="plssupply">Please supply the following:</string>
+    <string name="fblogin">Login with Facebook</string>
+    <string name="gpluslogin">Login with Google</string>
+    <string name="gpluslogo">Google Plus Logo</string>
+    <string name="fblogo">Facebook Logo</string>
+    <string name="turboL">Turbo Logo</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="sampleFirstName">Paulmark</string>
+    <string name="sampleLastName">Valenzuya</string>
+    <string name="small_username">username</string>
+    <string name="small_eadd">email address</string>
+    <string name="small_contactnum">contact number</string>
+    <string name="sampleUsername">androidLover</string>
+    <string name="sampleEmail">iloveandroid@androidlover.com</string>
+    <string name="sampleContactNum">+639123456789</string>
+    <string name="uploadphoto">Upload a Photo</string>
+    <string name="changephoto">Change Photo</string>
+    <string name="savechanges">Save Changes</string>
+    <string name="discardchanges">Discard Changes</string>
+    <string name="cancelreserv">Cancel Reservation</string>
+    <string-array name="service">
+        <item >Chauffer (P 1,500.00/day)</item>
+        <item >Self-Drive (P 1,000.00/day)</item>
+    </string-array>
+    <string-array name="loc">
+        <item >Port</item>
+        <item >Airport</item>
+    </string-array>
+    <string-array name="nav_drawer_items">
+        <item >Rental</item>
+        <item >History</item>
+        <item >Rent a Car</item>
+        <item >Profile</item>
+        <item >News and Events</item>
+        <item >Contact</item>
+        <item >About</item>
+        <item >Logout</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/navbar_myrentals</item>
+        <item>@drawable/navbar_history</item>
+        <item>@drawable/navbar_rentcar</item>
+        <item>@drawable/navbar_myprofile</item>
+        <item>@drawable/navbar_news</item>
+        <item>@drawable/navbar_contact</item>
+        <item>@drawable/navbar_aboutus</item>
+        <item>@drawable/navbar_logout</item>
+    </array>
+	<string name="desc_list_item_icon">Item Icon</string>
+</resources>

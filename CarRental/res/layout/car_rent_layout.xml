@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:baselineAligned="false"
+    android:padding="10dp"
+    android:background="@drawable/bottom_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+	<ImageView
+	    android:id="@+id/carImg"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:src="@drawable/mazda3" >
+
+    </ImageView>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_gravity="center" >
+    <TextView
+        android:id="@+id/carModel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Mazda 3"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/carCap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="4 seats"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.carrental.ProfileTab" >
+	<LinearLayout
+        android:layout_marginTop="@dimen/button_mTop"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:background="@color/green"
+	        android:textColor="@color/white"
+	        android:text="ACTIVE"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:gravity="center_horizontal" />
+	    <ListView
+	        android:id="@+id/listActive"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="false" >
+	    </ListView>
+	</LinearLayout>
+	<LinearLayout
+        android:layout_marginTop="@dimen/button_mTop"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:background="@color/orange"
+	        android:textColor="@color/white"
+	        android:text="PENDING"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:gravity="center_horizontal" />
+	    <ListView
+	        android:id="@+id/listPending"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="false" >
+	    </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/button_mTop"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:background="@color/red"
+	        android:textColor="@color/white"
+	        android:text="CANCELLED"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:gravity="center_horizontal" />
+	    <ListView
+	        android:id="@+id/listCancelled"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="false" >
+	    </ListView>
+	</LinearLayout>
+</LinearLayout>

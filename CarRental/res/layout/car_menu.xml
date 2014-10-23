@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bground"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/name"
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Car Model"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:background="@color/black" />
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical"
+        android:gravity="center" 
+        android:layout_margin="5dp">
+        
+	    <Button
+	        android:id="@+id/carInfo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/gray_button"
+	        android:text="View more Car information"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:padding="10dp"/>
+	    
+	    <Button
+	        android:id="@+id/driInfo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/gray_button"
+	        android:text="View Driver Information"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:padding="10dp" />
+	    
+	    <Button
+	        android:id="@+id/rent"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/green_button"
+	        android:text="RENT THIS CAR"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:padding="10dp"
+	        android:textStyle="bold" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bground" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+        
+        <TextView
+	        android:id="@+id/name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:background="@color/red"
+	        android:textColor="@color/white"
+	        android:text="BRANDON VERA"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_toRightOf="@+id/name_tag"
+	        android:textStyle="bold"/>
+        
+        <ImageView
+        android:id="@+id/photo"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/pacman" 
+        android:scaleType="centerCrop" />   
+    
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        
+        <TextView
+	        android:id="@+id/xp_tag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="YEARS OF EXPERIENCE"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:padding="15dp"
+	        android:background="@color/black"
+	        android:textStyle="bold"/>
+        
+        <TextView
+	        android:id="@+id/experience"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:padding="15dp"
+	        android:background="@drawable/bottom_border"
+	        android:textColor="@color/black"
+	        android:text="5"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_toRightOf="@+id/age_tag"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        
+        <TextView
+	        android:id="@+id/contact_tag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="PHONE"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:padding="15dp"
+	        android:background="@color/black"
+	        android:textStyle="bold"/>
+        
+        <TextView
+	        android:id="@+id/contactnumber"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:padding="15dp"
+	        android:background="@drawable/bottom_border"
+	        android:textColor="@color/black"
+	        android:text="09123456789"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_toRightOf="@+id/age_tag"/>
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        
+        <TextView
+	        android:id="@+id/age_tag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="AGE"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:padding="15dp"
+	        android:background="@color/black"
+	        android:textStyle="bold"/>
+        
+        <TextView
+	        android:id="@+id/age"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:padding="15dp"
+	        android:background="@drawable/bottom_border"
+	        android:textColor="@color/black"
+	        android:text="50"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_toRightOf="@+id/age_tag"/>
+    </LinearLayout>
+    
+    
+    </LinearLayout>
+</LinearLayout>

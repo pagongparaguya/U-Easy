@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground" >
+      <LinearLayout
+          android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal" >
+        
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="150dp" >
+
+		     <ImageView
+		         android:id="@+id/profpic"
+		         android:layout_width="150dp"
+		         android:layout_height="150dp"
+		         android:src="@drawable/defaultpic" />
+
+		     <Button
+		         android:id="@+id/uploadPhoto"
+		         android:layout_margin="5dp"
+		         android:layout_gravity="center"
+		         android:layout_width="fill_parent"
+		         android:layout_height="@dimen/form_height"
+		         android:layout_marginTop="@dimen/form_mTop"
+		         android:background="@drawable/gray_button"
+		         android:text="@string/uploadphoto"
+		         android:textColor="#ffffff"
+		         android:textSize="@dimen/form_textSize" />
+
+	  	</LinearLayout>
+	  
+	     <EditText
+	        android:id="@+id/firstname"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/firstname"
+	        android:inputType="textPersonName"
+	        android:background="@drawable/white_button" >
+		     	 
+	       	<requestFocus android:layout_width="match_parent" />      
+	     </EditText>
+	     
+	     <EditText
+	        android:id="@+id/lastname"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/lastname"
+	        android:inputType="textPersonName"
+	        android:background="@drawable/white_button" >	         
+	     </EditText>
+	     
+	     <EditText
+	        android:id="@+id/username"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/username"
+	        android:inputType="textPersonName"
+	        android:background="@drawable/white_button" >	         
+	     </EditText>
+	        
+	     <EditText
+	        android:id="@+id/password"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:hint="@string/password"
+	        android:inputType="textPassword"
+	        android:textSize="@dimen/form_textSize"
+	        android:background="@drawable/white_button" />
+	
+	    <EditText
+	        android:id="@+id/confirmpword"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/confirmpword"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:inputType="textPassword"
+	        android:background="@drawable/white_button" />
+	
+	    <EditText
+	        android:id="@+id/eadd"
+	         android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/eadd"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:inputType="textEmailAddress"
+	        android:background="@drawable/white_button" />    
+	
+	    <EditText
+	        android:id="@+id/contactnum"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:textSize="@dimen/form_textSize"
+	        android:hint="@string/contactnum"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:inputType="phone"
+	        android:background="@drawable/white_button" />
+	    
+	    <Button
+	        android:id="@+id/submit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:textSize="@dimen/form_textSize"
+	        android:layout_marginTop="@dimen/button_mTop"
+	        android:text="@string/submit"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/green_button" />
+	    
+	    <Button
+	        android:id="@+id/rtologin"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/form_height"
+	        android:layout_marginTop="@dimen/form_mTop"
+	        android:textSize="@dimen/form_textSize"     
+	        android:text="@string/rtologin"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/gray_button" />
+	    	    
+   </LinearLayout>
+</ScrollView>
